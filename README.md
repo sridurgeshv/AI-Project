@@ -28,7 +28,16 @@ The image analysis recognizes and lists the labels of an image - attribute (Ex. 
 To deploy the sample application you will require an AWS account. If you don’t already have an AWS account, create one at https://aws.amazon.com by following the on-screen instructions. Your access to the AWS account must have IAM permissions to launch the services that are used in this demo. To use the sample application you will require a modern browser.
 
 ### Keywords
-Javascript,  Express, Node.js, Amazon Web Services, Machine Learning, AWS SDK, AWS Rekognition, Face Detection, Image Detection, AWS IAM
+- Javascript
+- Express
+- Node.js
+- Machine Learning
+- AWS SDK
+- AWS Rekognition
+- Face Detection
+- Image Detection
+- AWS IAM
+
 
 ## AWS Services Used
 - **Amazon EC2**:
