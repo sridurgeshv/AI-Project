@@ -31,13 +31,18 @@ To deploy the sample application you will require an AWS account. If you don’t
 Javascript,  Express, Node.js, Amazon Web Services, Machine Learning, AWS SDK, AWS Rekognition, Face Detection, Image Detection, AWS IAM
 
 ### AWS Services Used
-- **Amazon EC2**: Amazon Elastic Compute Cloud (EC2) offers secure, scalable cloud computing resources. It simplifies web-scale cloud computing for developers, providing a straightforward web service interface for configuring and obtaining computing capacity with ease. EC2 grants full control over computing resources, enabling operations on Amazon's robust computing infrastructure. It boasts the widest compute platform, offering choices in processors, storage, networking, operating systems, and purchasing models. EC2 features the fastest processors available in the cloud, 400 Gbps ethernet networking, powerful GPU instances for machine learning and graphics processing, and low-cost inference instances.
+- **Amazon EC2**:
+Amazon EC2 provides secure, scalable cloud computing, simplifying web-scale development with its intuitive web service interface. It offers extensive control over computing resources, leveraging Amazon's robust infrastructure. EC2 features a versatile compute platform with options for processors, storage, networking, OS, and pricing models. It delivers top-tier performance with fast processors, 400 Gbps ethernet, and specialized GPU instances for AI and graphics, alongside cost-effective inference instances.
 
-- **Amazon Rekognition**: This service facilitates the integration of image and video analysis into applications using advanced, scalable deep learning technologies. Without requiring machine learning expertise, Rekognition can recognize objects, individuals, text, scenes, and activities in images and videos, and detect inappropriate content. It also provides precise facial analysis and search functionalities for various uses, including user verification, crowd monitoring, and public safety initiatives.
 
-- **Amazon VPC**: Amazon Virtual Private Cloud (VPC) allows launching AWS resources within a customizable virtual network. Users have comprehensive control over their virtual networking setup, including IP address selection, subnet creation, and routing table and gateway configurations. VPC supports both IPv4 and IPv6, enhancing security and accessibility to resources and applications.
+- **Amazon Rekognition**:
+Rekognition integrates image/video analysis into apps using advanced, scalable deep learning. It identifies objects, people, text, and activities in media without ML expertise, detects inappropriate content, and offers detailed facial analysis for user verification, crowd monitoring, and public safety.
 
-- **AWS Identity and Access Management (IAM)**: IAM enables secure management of access to AWS services and resources. Through IAM, users can establish and manage AWS identities and apply permissions to grant or restrict access to AWS resources. IAM is a free feature of AWS accounts; charges apply only for the use of other AWS services.
+- **Amazon VPC**:
+Amazon Virtual Private Cloud (VPC) enables launching AWS resources in a customizable virtual network, offering users full control over IP addresses, subnet creation, and routing configurations. Supporting both IPv4 and IPv6, it enhances security and resource/application accessibility.
+
+- **AWS Identity and Access Management (IAM)**:
+IAM secures AWS access management. Users can manage identities and permissions via IAM, controlling resource access. It's a complimentary AWS feature; fees are incurred for other AWS services usage.
 
 ### Resources Used
 - index.html: Markup for the static application
