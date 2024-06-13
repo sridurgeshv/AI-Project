@@ -1,20 +1,20 @@
 # Image and Facial Analysis Demo Overview
 
 ## Table of Contents :-
-1. Pre-requisites        
-2. Keywords      
-3. AWS Services Used       
-4. Resources Used        
-5. Frameworks/Libraries Used
-6. Steps Overview
-7. Steps to Build the App        
-- Step 1: Create an EC2 instance and an IAM role       
-- Step 2: Connect to the EC2 Instance       
-- Step 3: Install Node.js and Setup the Application        
-- Step 4: Finish        
-8. Additional Notes        
-9. Screenshots       
-10. Useful Resources        
+1. [Pre-requisites](#)        
+2. [Keywords](#)      
+3. [AWS Services Used](#)         
+4. [Resources Used](#)          
+5. [Frameworks/Libraries Used](#)  
+6. [Steps Overview](#)  
+7. [Steps to Build the App](#)          
+- Step 1: [Create an EC2 instance and an IAM role](#)         
+- Step 2: [Connect to the EC2 Instance](#)         
+- Step 3: [Install Node.js and Setup the Application](#)          
+- Step 4: [Finish](#)          
+8. [Additional Notes](#)          
+9. [Screenshots](#)         
+10. [Useful Resources](#)          
 
 > [!WARNING]
 > Utilizing AWS services for this demo may lead to charges unless kept within [AWS Free Tier limits](https://aws.amazon.com/free/). Exceeding these limits incurs costs. Users can monitor their usage and set billing alerts via AWS tools to manage spending. Refer to "[Avoiding unexpected charges](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/checklistforunwantedcharges.html)" for advice on minimizing expenses.
@@ -24,13 +24,13 @@ The scope of the demo is to build an application that provides us with a simple 
 
 The image analysis recognizes and lists the labels of an image - attribute (Ex. Scenery, Dance, Electronics, etc) and some facial attributes (if any) of the uploaded image.
 
-### Pre-requisites
+## Pre-requisites
 To deploy the sample application you will require an AWS account. If you don’t already have an AWS account, create one at https://aws.amazon.com by following the on-screen instructions. Your access to the AWS account must have IAM permissions to launch the services that are used in this demo. To use the sample application you will require a modern browser.
 
 ### Keywords
 Javascript,  Express, Node.js, Amazon Web Services, Machine Learning, AWS SDK, AWS Rekognition, Face Detection, Image Detection, AWS IAM
 
-### AWS Services Used
+## AWS Services Used
 - **Amazon EC2**:
 Amazon EC2 provides secure, scalable cloud computing, simplifying web-scale development with its intuitive web service interface. It offers extensive control over computing resources, leveraging Amazon's robust infrastructure. EC2 features a versatile compute platform with options for processors, storage, networking, OS, and pricing models. It delivers top-tier performance with fast processors, 400 Gbps ethernet, and specialized GPU instances for AI and graphics, alongside cost-effective inference instances.
 
@@ -44,17 +44,24 @@ Amazon Virtual Private Cloud (VPC) enables launching AWS resources in a customiz
 - **AWS Identity and Access Management (IAM)**:
 IAM secures AWS access management. Users can manage identities and permissions via IAM, controlling resource access. It's a complimentary AWS feature; fees are incurred for other AWS services usage.
 
-### Resources Used
+## Resources Used
 - index.html: Markup for the static application
+ 
 https://awsmc-dd.s3.ap-south-1.amazonaws.com/index.html
+
 - index.js: Javascript logic for making API calls to the backend
+
 https://awsmc-dd.s3.ap-south-1.amazonaws.com/index.js
+
 - server.js: Backend logic which invokes the Amazon Rekognition service on the user’s behalf
+
 https://awsmc-dd.s3.ap-south-1.amazonaws.com/server.js
+
 - package.json: Dependency list for server.js
+
 https://awsmc-dd.s3.ap-south-1.amazonaws.com/package.json
 
-### Frameworks/Libraries Used
+## Frameworks/Libraries Used
 - **Bootstrap v5**
 Bootstrap is a free and open-source framework for building the front end of the application.
 
