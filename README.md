@@ -22,7 +22,7 @@
 ## Project Overview
 The scope of the demo is to build an application that provides us with a simple frontend (built using HTML and Bootstrap) to upload an image, a server running on EC2 - a virtual server on AWS, Amazon Rekognition - a powerful Machine Learning service on AWS.
 
-The image analysis recognizes and lists the labels of an image - attribute (Ex. Scenery, Dance, Electronics, etc) and some facial attributes (if any) of the uploaded image.
+The image analysis recognizes and lists the labels of an image - attribute (**Ex**. Scenery, Dance, Electronics, etc) and some facial attributes (if any) of the uploaded image.
 
 ## Pre-requisites
 To deploy the sample application you will require an AWS account. If you don’t already have an AWS account, create one at https://aws.amazon.com by following the on-screen instructions. Your access to the AWS account must have IAM permissions to launch the services that are used in this demo. To use the sample application you will require a modern browser.
