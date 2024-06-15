@@ -95,10 +95,10 @@ Learn More: [Express](https://expressjs.com/)
 
 # Screenshots
 - Main Page
-![Alt Text]()
+![Alt Text](https://github.com/sridurgeshv/AI-Project/blob/main/ss1.png)
 
 - Result
-![Alt Text]()
+![Alt Text](https://github.com/sridurgeshv/AI-Project/blob/main/ss2.png)
 
 ## Useful Resources
 - [What is the AWS Free Tier, and how do I use it?](https://repost.aws/knowledge-center/what-is-free-tier)
