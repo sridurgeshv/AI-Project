@@ -93,6 +93,8 @@ Learn More: [Express](https://expressjs.com/)
 
 ### Step 4: Finish
 
+You can find these steps in this blog - [Here]() 
+
 # Screenshots
 - Main Page
 ![Alt Text](https://github.com/sridurgeshv/AI-Project/blob/main/images/ss1.png)
