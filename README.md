@@ -3,18 +3,17 @@
 ## Table of Contents :-
 1. [Pre-requisites](#)        
 2. [Keywords](#)      
-3. [AWS Services Used](#)         
-4. [Resources Used](#)          
-5. [Frameworks/Libraries Used](#)  
-6. [Steps Overview](#)  
-7. [Steps to Build the App](#)          
+3. [AWS Services Used](#)              
+4. [Frameworks/Libraries Used](#)  
+5. [Steps Overview](#)  
+6. [Steps to Build the App](#)          
 - Step 1: [Create an EC2 instance and an IAM role](#)         
 - Step 2: [Connect to the EC2 Instance](#)         
 - Step 3: [Install Node.js and Setup the Application](#)          
 - Step 4: [Finish](#)          
-8. [Additional Notes](#)          
-9. [Screenshots](#)         
-10. [Useful Resources](#)          
+7. [Additional Notes](#)          
+8. [Screenshots](#)         
+9. [Useful Resources](#)          
 
 > [!WARNING]
 > Utilizing AWS services for this demo may lead to charges unless kept within [AWS Free Tier limits](https://aws.amazon.com/free/). Exceeding these limits incurs costs. Users can monitor their usage and set billing alerts via AWS tools to manage spending. Refer to "[Avoiding unexpected charges](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/checklistforunwantedcharges.html)" for advice on minimizing expenses.
@@ -25,9 +24,9 @@ The scope of the demo is to build an application that provides us with a simple 
 The image analysis recognizes and lists the labels of an image - attribute (**Ex**. Scenery, Dance, Electronics, etc) and some facial attributes (if any) of the uploaded image.
 
 ## Pre-requisites
-To deploy the sample application you will require an AWS account. If you don’t already have an AWS account, create one at https://aws.amazon.com by following the on-screen instructions. Your access to the AWS account must have IAM permissions to launch the services that are used in this demo. To use the sample application you will require a modern browser.
+To deploy the sample application you will require an AWS account. If you don’t already have an AWS account, create one at [Here](https://aws.amazon.com) by following the on-screen instructions. Your access to the AWS account must have IAM permissions to launch the services that are used in this demo. To use the sample application you will require a modern browser.
 
-### Keywords
+## Keywords
 - Javascript
 - Express
 - Node.js
@@ -41,8 +40,7 @@ To deploy the sample application you will require an AWS account. If you don’t
 
 ## AWS Services Used
 - **Amazon EC2**:
-Amazon EC2 provides secure, scalable cloud computing, simplifying web-scale development with its intuitive web service interface. It offers extensive control over computing resources, leveraging Amazon's robust infrastructure. EC2 features a versatile compute platform with options for processors, storage, networking, OS, and pricing models. It delivers top-tier performance with fast processors, 400 Gbps ethernet, and specialized GPU instances for AI and graphics, alongside cost-effective inference instances.
-
+Amazon Elastic Cloud Compute (EC2) is a cloud service providing scalable and secure computing power. It allows users to run applications and manage servers without owning physical hardware, making it cost-effective and flexible for various computing needs.
 
 - **Amazon Rekognition**:
 Rekognition integrates image/video analysis into apps using advanced, scalable deep learning. It identifies objects, people, text, and activities in media without ML expertise, detects inappropriate content, and offers detailed facial analysis for user verification, crowd monitoring, and public safety.
@@ -53,49 +51,40 @@ Amazon Virtual Private Cloud (VPC) enables launching AWS resources in a customiz
 - **AWS Identity and Access Management (IAM)**:
 IAM secures AWS access management. Users can manage identities and permissions via IAM, controlling resource access. It's a complimentary AWS feature; fees are incurred for other AWS services usage.
 
-## Resources Used
-- index.html: Markup for the static application
- 
-https://awsmc-dd.s3.ap-south-1.amazonaws.com/index.html
-
-- index.js: Javascript logic for making API calls to the backend
-
-https://awsmc-dd.s3.ap-south-1.amazonaws.com/index.js
-
-- server.js: Backend logic which invokes the Amazon Rekognition service on the user’s behalf
-
-https://awsmc-dd.s3.ap-south-1.amazonaws.com/server.js
-
-- package.json: Dependency list for server.js
-
-https://awsmc-dd.s3.ap-south-1.amazonaws.com/package.json
 
 ## Frameworks/Libraries Used
 - **Bootstrap v5**
-Bootstrap is a free and open-source framework for building the front end of the application.
 
-Learn More: https://getbootstrap.com/
+Bootstrap is a free and open-source framework for building the front end of applications.
 
-- **aws-sdk v2 for Javascript**
-aws-sdk allows our application to access the AWS services on our behalf.
+Learn More: [Bootstrap](https://getbootstrap.com/)
 
-Example: Listing all the buckets in our S3 account
+- **aws-sdk v2 for JavaScript**
 
-Learn More: https://docs.aws.amazon.com/sdk-for-javascript
+The AWS SDK for JavaScript allows our application to interact with AWS services programmatically.
+
+**Example**: Listing all the buckets in our S3 account.
+
+Learn More: [AWS SDK for JavaScript](https://docs.aws.amazon.com/sdk-for-javascript)
 
 - **Express**
-A node.js framework to serve our application and to provide API endpoints for the frontend to invoke the functions to detect the labels and the facial expressions.
 
-## Steps Overview
-- Go to https://aws.amazon.com/console/
+Express is a Node.js framework used to serve our application and provide API endpoints for the front end to invoke functions, such as detecting labels and facial expressions.
+
+Learn More: [Express](https://expressjs.com/)
+
+## Steps to Launch and Use Your Application on AWS EC2
+- Go to the [AWS Console](https://aws.amazon.com/console/)
 - Create an EC2 Instance (server) on AWS
-- Configure the OS, Instance Type, Storage, Security, and other settings for your EC2 Instance.
-- Assign permissions (through the IAM role) to your EC2 instance to access the Amazon Rekognition service.
+- Configure the settings for your EC2 Instance, including: - Operating System (OS), Instance Type, Storage & Security.
+- Assign an IAM role to your EC2 instance with permissions to access the Amazon Rekognition service.
 - Launch the instance.
 - Connect to the instance.
 - In the terminal, type all the necessary commands, and once processed, your application will be ready to use.
-- Copy the public IP address of your EC2 Instance and paste it into the new tab in the format <public ip>:3000 Example: http://43.204.79.72:3000
-- You will be able to see the application running.
+- Copy the public IP address of your EC2 Instance and paste it into a new browser tab in the format `<public-ip>:3000`.
+  
+**Example**: `http://54.80.238.206:3000`
+- You will see the application running.
 - Try uploading different images and inspect the response.
 
 ## Steps to Build the App
