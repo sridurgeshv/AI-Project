@@ -11,9 +11,8 @@
 - Step 2: [Connect to the EC2 Instance](#)         
 - Step 3: [Install Node.js and Setup the Application](#)          
 - Step 4: [Finish](#)          
-7. [Additional Notes](#)          
-8. [Screenshots](#)         
-9. [Useful Resources](#)          
+7. [Screenshots](#)
+8. [Useful Resources](#)          
 
 > [!WARNING]
 > Utilizing AWS services for this demo may lead to charges unless kept within [AWS Free Tier limits](https://aws.amazon.com/free/). Exceeding these limits incurs costs. Users can monitor their usage and set billing alerts via AWS tools to manage spending. Refer to "[Avoiding unexpected charges](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/checklistforunwantedcharges.html)" for advice on minimizing expenses.
@@ -91,55 +90,17 @@ Learn More: [Express](https://expressjs.com/)
 ### Step 2: Connect to the EC2 Instance
 
 ### Step 3: Install Node.js and Setup the Application
-1. **Install Node.js** by executing the following commands in the terminal
-```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh |
-bash
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-nvm –version
-nvm install node
-```
-2. Execute the following commands:
-```bash 
-mkdir app
-
-cd app
-
-mkdir public && mkdir server
-
-cd public
-
-wget https://awsmc-dd.s3.ap-south-1.amazonaws.com/index.html
-
-wget https://awsmc-dd.s3.ap-south-1.amazonaws.com/index.js
-
-cd ..
-
-cd server
-
-wget https://awsmc-dd.s3.ap-south-1.amazonaws.com/package.json
-
-wget https://awsmc-dd.s3.ap-south-1.amazonaws.com/server.js
-
-npm install
-```
-3. In point 4, steps a-c create the **directories**. Steps d-f involve navigating to the folder “public” and **downloading** index.html and index.js. Steps g-h involve navigating to the folder server and downloading **package.json and server.js**. Package.json contains the dependencies required by server.js. On doing **npm install**, those dependencies will be installed
-4. Execute the following command in the terminal
-```bash
-node server.js
-```
-5. The above command will start the server and the terminal should look like below
 
 ### Step 4: Finish
-You can find out the Public IP address of your EC2 Instance on the bottom left of the terminal window. OR you can find the Public IP address of the EC2 instance in the EC2 Management Console. On selecting the newly created instance, the public IP address will be shown in the properties of the selected EC2 instance.
-Navigate to the browser and type the following:-
-```bash
-http://<IP_ADDDRESS>:3000
-```
-> [!NOTE]
-> The <IP_ADDDRESS> will be the IP address that you found in the previous step. Example: http://43.204.79.72:3000
 
-You would be able to see the webpage now. You have a working Image recognizer and the power of deep learning at your disposal. **Congratulations!**
+# Screenshots
+- Main Page
+![Alt Text](https://github.com/sridurgeshv/AI-Project/blob/main/ss1.JPG)
+
+- Result
+![Alt Text](https://github.com/sridurgeshv/AI-Project/blob/main/ss2.JPG)
+
+## Useful Resources
+- [What is the AWS Free Tier, and how do I use it?](https://repost.aws/knowledge-center/what-is-free-tier)
+- [How do I make sure I don't incur charges when I'm using the AWS Free Tier?](https://repost.aws/knowledge-center/free-tier-charges)
+- [I unintentionally incurred charges while using the AWS Free Tier. How do I make sure that I'm not billed again?](https://repost.aws/knowledge-center/stop-future-free-tier-charges)
