@@ -73,7 +73,7 @@ Express is a Node.js framework used to serve our application and provide API end
 
 Learn More: [Express](https://expressjs.com/)
 
-## Steps to Launch and Use Your Application on AWS EC2
+## Steps Overview
 - Go to the [AWS Console](https://aws.amazon.com/console/)
 - Create an EC2 Instance (server) on AWS
 - Configure the settings for your EC2 Instance, including: - Operating System (OS), Instance Type, Storage & Security.
@@ -81,33 +81,39 @@ Learn More: [Express](https://expressjs.com/)
 - Launch the instance.
 - Connect to the instance.
 - In the terminal, type all the necessary commands, and once processed, your application will be ready to use.
-- Copy the public IP address of your EC2 Instance and paste it into a new browser tab in the format `<public-ip>:3000`.
-  
-**Example**: `http://54.80.238.206:3000`
+- Copy the public IP address of your EC2 Instance and paste it into a new browser tab in the format `<public-ip>:3000`. **Example**: `http://54.80.238.206:3000`
 - You will see the application running.
 - Try uploading different images and inspect the response.
 
 ## Steps to Build the App
 ### Step 1: Create an EC2 instance and an IAM role
-1. Go to [https://aws.amazon.com/console/](https://aws.amazon.com/console/)
+1. Go to [AWS Console](https://aws.amazon.com/console/)
 2. After logging in, Navigate to the Console and select **“EC2”** from the services dropdown.
 3. Click on **“Launch Instance”**
 4. Select **Amazon Linux 2023** as the AMI
-5. Select t3.micro type of instance and click on **“Next: Configure Instance Details”**
-6. On this page (configure instance details or Step 3), we create an IAM role that gives **permissions** to the EC2 to access the AWS Rekognition service on your behalf. Click on **“Create a new IAM role”**
-7. A new tab would be opened. Navigate to the new tab and click on on **“Create Role”**
-8. Under “Choose a use case”, click on EC2 which would be under **“Common use cases”**
-9. Now, we should attach the relevant permissions to our role. Search for **AmazonRekognitionFullAccess** and tick the box so that it will be attached to our role.
-10. Click next and here you can optionally add tags.
-11. Click next and assign a name to the role. I am going to assign the name as “aws-rekog-1”. Give a description and click **“Create Role”**.
-12. Navigate to the previous tab, and click on the refresh button near **“Create new IAM role”**
-13. Select the role that you just created. In my case it is aws-rekog-1. Now the IAM role field should look like this.
-14. Click on **“Next: Add Storage”** and after that **“Next: Add Tags”** and then **“Next: Configure Security Groups”**. We will leave Storage and Tags as **defaults**.
-15. In the security groups, Click on add a new rule and let the type of the new rule be **“Custom TCP Rule”**. Fill in the rule and finally, the rules should look as follows.
-16. The new rule is going to allow us to access the EC2 instance from anywhere. We would be using the port number 3000 to host our application, but you can use any port number greater than 1024.
-17. Click **“Review and Launch”**. Review your configuration and click on **Launch**.
-18. A pop-up window will appear. Fill the form as below:
-19. You can give any name to your key pair. Download the key pair and keep it safe. After that click on **Launch Instances**.
+5. Select `t3.micro` in the instance type.
+6. In the "Network settings" field, tick the checkbox beside `Allow HTTP traffic from the internet` for allowing traffic from http requests. 
+7. click on "Edit" button. In the "Inbound Security Group Rules" section. Click on "Add security group rule", and enter these details :-
+   - Type        -  Custom TCP
+   - Port range  -  3000 
+   - Source Type -  Custom
+   - Source      -  `0.0.0.0/0`, `::/0`  
+8. Toggle the "Advanced details".
+
+9. we create an IAM role that gives **permissions** to the EC2 to access the AWS Rekognition service on your behalf. Click on **“Create a new IAM role”**
+10. A new tab would be opened. Navigate to the new tab and click on on **“Create Role”**
+11. Under “Choose a use case”, click on EC2 which would be under **“Common use cases”**
+12. Now, we should attach the relevant permissions to our role. Search for **AmazonRekognitionFullAccess** and tick the box so that it will be attached to our role.
+13. Click next and here you can optionally add tags.
+14. Click next and assign a name to the role. I am going to assign the name as “aws-rekog-1”. Give a description and click **“Create Role”**.
+15. Navigate to the previous tab, and click on the refresh button near **“Create new IAM role”**
+16. Select the role that you just created. In my case it is aws-rekog-1. Now the IAM role field should look like this.
+17. Click on **“Next: Add Storage”** and after that **“Next: Add Tags”** and then **“Next: Configure Security Groups”**. We will leave Storage and Tags as **defaults**.
+18. In the security groups, Click on add a new rule and let the type of the new rule be **“Custom TCP Rule”**. Fill in the rule and finally, the rules should look as follows.
+19. The new rule is going to allow us to access the EC2 instance from anywhere. We would be using the port number 3000 to host our application, but you can use any port number greater than 1024.
+20. Click **“Review and Launch”**. Review your configuration and click on **Launch**.
+21. A pop-up window will appear. Fill the form as below:
+22. You can give any name to your key pair. Download the key pair and keep it safe. After that click on **Launch Instances**.
 
 > [!NOTE]
 > You can also proceed without creating a key pair for this demo.
