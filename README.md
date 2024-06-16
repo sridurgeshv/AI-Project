@@ -93,7 +93,7 @@ Learn More: [Express](https://expressjs.com/)
 
 ### Step 4: Finish
 
-You can find these steps in this blog - [Here]() 
+For detailed instructions on each step, please refer to the comprehensive guide in the blog [here]().
 
 # Screenshots
 - Main Page
