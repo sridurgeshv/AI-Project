@@ -85,21 +85,21 @@ Learn More: [Express](https://expressjs.com/)
 - Try uploading different images and inspect the response.
 
 ## Steps to Build the App
-### Step 1: Create an EC2 instance and an IAM role
+#### Step 1: Create an EC2 instance and an IAM role
 
-### Step 2: Connect to the EC2 Instance
+#### Step 2: Connect to the EC2 Instance
 
-### Step 3: Install Node.js and Setup the Application
+#### Step 3: Install Node.js and Setup the Application
 
-### Step 4: Finish
+#### Step 4: Finish
 
 For detailed instructions on each step, please refer to the comprehensive guide in the blog [here]().
 
 # Screenshots
-- Main Page
+- **Main Page**
 ![Alt Text](https://github.com/sridurgeshv/AI-Project/blob/main/images/ss1.png)
 
-- Result
+- **Result**
 ![Alt Text](https://github.com/sridurgeshv/AI-Project/blob/main/images/ss2.png)
 
 ## Useful Resources
