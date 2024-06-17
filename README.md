@@ -1,4 +1,4 @@
-# Image and Facial Analysis Demo Overview
+# Image and Facial Analysis Demo with AWS: Comprehensive Guide
 
 ## Table of Contents :-
 1. [Pre-requisites](#)        
@@ -23,7 +23,12 @@ The scope of the demo is to build an application that provides us with a simple 
 The image analysis recognizes and lists the labels of an image - attribute (**Ex**. Scenery, Dance, Electronics, etc) and some facial attributes (if any) of the uploaded image.
 
 ## Pre-requisites
-To deploy the sample application you will require an AWS account. If you don’t already have an AWS account, create one at [Here](https://aws.amazon.com) by following the on-screen instructions. Your access to the AWS account must have IAM permissions to launch the services that are used in this demo. To use the sample application you will require a modern browser.
+
+To deploy this application, you will need:
+
+- An AWS account. If you don't have one, create it [here](https://aws.amazon.com) by following the on-screen instructions.
+- IAM permissions to launch the necessary AWS services.
+- A modern web browser.
 
 ## Keywords
 - Javascript
@@ -45,22 +50,22 @@ Amazon Elastic Cloud Compute (EC2) is a cloud service providing scalable and sec
 Rekognition integrates image/video analysis into apps using advanced, scalable deep learning. It identifies objects, people, text, and activities in media without ML expertise, detects inappropriate content, and offers detailed facial analysis for user verification, crowd monitoring, and public safety.
 
 - **Amazon VPC**:
-Amazon Virtual Private Cloud (VPC) enables launching AWS resources in a customizable virtual network, offering users full control over IP addresses, subnet creation, and routing configurations. Supporting both IPv4 and IPv6, it enhances security and resource/application accessibility.
+Amazon Virtual Private Cloud (VPC) enables launching AWS resources in a customizable virtual network, providing control over IP addresses, subnets, and routing configurations.
 
 - **AWS Identity and Access Management (IAM)**:
-IAM secures AWS access management. Users can manage identities and permissions via IAM, controlling resource access. It's a complimentary AWS feature; fees are incurred for other AWS services usage.
+IAM secures AWS access management, allowing users to manage identities and permissions, controlling resource access.
 
 
 ## Frameworks/Libraries Used
 - **Bootstrap v5**
 
-Bootstrap is a free and open-source framework for building the front end of applications.
+A free and open-source framework for building the front end of applications.
 
 Learn More: [Bootstrap](https://getbootstrap.com/)
 
 - **aws-sdk v2 for JavaScript**
 
-The AWS SDK for JavaScript allows our application to interact with AWS services programmatically.
+Enables the application to interact with AWS services programmatically.
 
 **Example**: Listing all the buckets in our S3 account.
 
@@ -68,7 +73,7 @@ Learn More: [AWS SDK for JavaScript](https://docs.aws.amazon.com/sdk-for-javascr
 
 - **Express**
 
-Express is a Node.js framework used to serve our application and provide API endpoints for the front end to invoke functions, such as detecting labels and facial expressions.
+A Node.js framework used to serve the application and provide API endpoints for front-end functions.
 
 Learn More: [Express](https://expressjs.com/)
 
@@ -96,10 +101,10 @@ Learn More: [Express](https://expressjs.com/)
 For detailed instructions on each step, please refer to the comprehensive guide in the blog [here]().
 
 # Screenshots
-- **Main Page**
+- ### Main Page
 ![Alt Text](https://github.com/sridurgeshv/AI-Project/blob/main/images/ss1.png)
 
-- **Result**
+- ### Result
 ![Alt Text](https://github.com/sridurgeshv/AI-Project/blob/main/images/ss2.png)
 
 ## Useful Resources
