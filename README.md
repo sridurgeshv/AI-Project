@@ -1,4 +1,4 @@
-# Image and Facial Analysis Demo with AWS: Comprehensive Guide
+# Master Image and Facial Recognition with AWS: Comprehensive Guide
 
 ## Table of Contents :-
 1. [Pre-requisites](#)        
